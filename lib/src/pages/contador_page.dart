@@ -30,7 +30,7 @@ class _ContadorPageState extends State<ContadorPage> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text('Aplicacion de prueba'),
+          title: Text('APP flutter Android mobile'),
           centerTitle: true,
           backgroundColor: Colors.cyan.shade800,
         ),
@@ -39,7 +39,7 @@ class _ContadorPageState extends State<ContadorPage> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               Text(
-                'Numero de clics:',
+                'Numero de taps:',
                 style: _styleText,
               ),
               Text('$_contador', style: _styleText)
@@ -55,13 +55,22 @@ class _ContadorPageState extends State<ContadorPage> {
         width: 30,
       ),
       FloatingActionButton(
-          child: Icon(Icons.restart_alt), onPressed: _restaurarContador),
+        child: Icon(Icons.restart_alt),
+        onPressed: _restaurarContador,
+        backgroundColor: Colors.cyan,
+      ),
       Expanded(child: SizedBox(width: 15)),
       FloatingActionButton(
-          child: Icon(Icons.remove), onPressed: _disminuirContador),
+        child: Icon(Icons.remove),
+        onPressed: _disminuirContador,
+        backgroundColor: Colors.cyan,
+      ),
       SizedBox(width: 15),
       FloatingActionButton(
-          child: Icon(Icons.add), onPressed: _aumentarContador),
+        child: Icon(Icons.add),
+        onPressed: _aumentarContador,
+        backgroundColor: Colors.cyan,
+      ),
     ]);
   }
 }
